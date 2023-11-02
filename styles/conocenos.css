@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+:root{
+    --texto-color: #555843;
+    --texto-color-2: #F5EEC8;
+    --background: #F5EEC8;
+    --navbar-background-color: #A7D397;
+    --navbar-color-complementary: #6a8660;
+    --boton-color: #555843;
+    --implment: #D0D4CA;
+    --texto-claro: #ffffff;
+    --texto-oscuro: #000;
+    --footer-color: #c2bc9e;
+    --footer-color-2: #a8a389;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    user-select: none;
+    color: var(--texto-color);
+    /* *PUEDE VARIAR */
+}
+
+body {
+    background-color: var(--background);
+}
+
+/* !PAGINAS POR DEFECTO */
+
+.navbar {
+    background-color: var(--navbar-background-color);
+    width: 100%;
+    height: 95px;
+    position: sticky; /* !CAMBIO EN REVISION */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar span {
+    user-select: none;
+    margin-left: 30px;
+    font-size: 3rem;
+}
+
+.navbar span:hover {
+    cursor: pointer;
+}
+
+.navbar span:active {
+    color: var(--navbar-color-complementary);
+    /* !FALTA ARREGLAR */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 30px;
+}
+
+.navbar ul li{
+    padding: 5px;
+}
+
+.navbar ul li a{
+    font-size: 1.2rem;
+}
+.navbar ul li a:hover{
+    color: var(--navbar-color-complementary);
+}
+.nav-ul .submenu{
+    display:none;
+    position: absolute;
+    background-color: var(--navbar-color-complementary);
+    box-shadow: 3px 3px #41533b;
+    list-style: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-ul .submenu a:hover{
+    color: var(--texto-color-2);
+}
+
+.abajo-menu:hover  .submenu{
+    display: block;
+}
+
+.navbar .search {
+    width: 25%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.navbar form input{
+    background-color: var(--background);
+    user-select: none;
+    width: 190%;
+    height: 30px;
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+    border: 0;
+    outline: none;
+}
+
+.navbar button {
+    background-color: var(--boton-color);
+    color: var(--texto-color-2);
+    user-select: none;
+    border: none;
+    border-radius: 10px;
+    width: 15%;
+    height: 30px;
+}
+
+.navbar button:active{
+    background-color: var(--background);
+    color: var(--texto-color);
+}
+
+/* TODO ESTO ES EL NAVBAR */
+
+/* TODO ESTO ES EL MAIN */
+
+/* TODO: ACA INICIA EL FOOTER */
+
+.footer-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container .info-container{
+    background-color: var(--footer-color);
+    padding: 100px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container .info-container .hidden-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 500px;
+
+}
+
+.footer-container .info-container .hidden-information ion-icon{
+    font-size: 8rem;
+    color: #7ea072;
+    margin-bottom: 10px;
+}
+
+.footer-container .info-container .hidden-information .hidden-information-span{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.footer-container .info-container .hidden-information .hidden-information-paragraph{
+    font-size: 1rem;
+    color: var(--texto-color);
+    text-align: center;
+    padding: 0 70px;
+    margin-bottom: 25px;
+}
+
+.footer-container .info-container .hidden-information .footer-redirection-span{
+    font-size: 0.85rem;
+    color: #357aff;
+}
+
+.footer-container .info-container .footer-liena{
+    height: 200px;
+    margin: 0 10px;
+    width: 3px;
+    background-color: var(--implment);
+}
+
+.estances-container{
+    padding: 25px 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--footer-color-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.estances-container .ul-redirection-container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.estances-container .ul-redirection-container .estances-redirection{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 25px;
+}
+
+.estances-container .ul-redirection-container .estances-redirection a:hover{
+    color: var(--texto-oscuro);
+}
+
+.estances-container .copyright{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    align-items: start;
+    justify-content: center;
+
+}
+
+/* !ACA INICIA EL MAIN */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.terminos-y-condiciones{
+    box-shadow: 3px 3px 5px var(--footer-color);
+    margin-top: 100px;
+    border-radius: 40px;
+    padding: 100px 100px 50px 100px;
+    background-color: #ffffff;
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.terminos-y-condiciones .subtitulo{
+    color: #2a2a2a;
+    user-select: none;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.terminos-y-condiciones .pagraphap{
+    color: #2a2a2a;
+    user-select: none;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.terminos-y-condiciones .utilidad{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.terminos-y-condiciones .utilidad .pregunta{
+    font-size: 0.85rem;
+    user-select: none;
+    color: #357aff;
+}
+
+.terminos-y-condiciones .utilidad .btn-ayuda{
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+}
+.terminos-y-condiciones .utilidad .btn-ayuda button{
+    border-radius: 5px;
+    user-select: none;
+    border: none;
+    height: 30px;
+    background-color: var(--boton-color);
+    color: var(--texto-color-2);
+    width: 30%;
+    cursor: pointer;
+}
+
+.terminos-y-condiciones .utilidad .btn-ayuda button:hover{
+    background-color: var(--texto-color-2);
+    color: var(--boton-color);
+}

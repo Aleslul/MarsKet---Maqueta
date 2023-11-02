@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+:root{
+    --texto-color: #555843;
+    --texto-color-2: #F5EEC8;
+    --background: #F5EEC8;
+    --navbar-background-color: #A7D397;
+    --navbar-color-complementary: #6a8660;
+    --boton-color: #555843;
+    --implment: #D0D4CA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    user-select: none;
+    color: var(--texto-color);
+    /* *PUEDE VARIAR */
+}
+
+body {
+    background-color: var(--background);
+}
+
+/* TODO: ----------> HASTA AQUI PARA TODO <----------- */
+
+main{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner{
+    background-color: var(--navbar-background-color);
+    border-radius: 50px;
+    width: 40%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 90%;
+    height: 90%;
+}
+
+.banner .container-login .login-span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner .container-login .login-span span{
+    user-select: none;
+    color: var(--texto-color);
+    font-size: 3.5rem;
+}
+
+.banner .container-login .login-span .linea{
+    height: 3px;
+    width: 100%;
+    background-color: var(--texto-color-2);
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.banner .container-login .icons{
+    display: flex;
+    width: 200px;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.banner .container-login .icons ion-icon{
+    font-size: 3rem;
+    color: var(--background);
+    background-color: var(--boton-color);
+    padding: 3px;
+    border-radius: 7px;
+}
+
+.banner .container-login .login-form{
+    height: 400px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    margin-bottom: 80px;
+}
+
+.banner .container-login .login-form form{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+.banner .container-login .login-form span{
+    user-select: none;
+    font-size: 1.6rem;
+    margin: 10px 0 10px 0;
+    color: var(--texto-color-2);
+}
+
+.banner .container-login .login-form input{
+    user-select: none;
+    width: 80%;
+    height: 60px;
+    background-color: var(--navbar-color-complementary);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.banner .container-login .login-form input::placeholder{
+    color: var(--boton-color);
+}
+
+.banner .container-login .login-form input:active{
+    background-color: var(--navbar-color-complementary);
+}
+
+.banner .container-login .btn-container{
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .container-login .btn-container .register-btn{
+    user-select: none;
+    background-color: var(--texto-color);
+    color: var(--texto-color-2);
+    border: none;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.banner .container-login .btn-container .register-btn:active{
+    background-color: var(--background);
+    color: var(--boton-color);
+}
+
+.banner .container-login .btn-container .login-btn{
+    user-select: none;
+
+    background-color: var(--background);
+    color: var(--boton-color);
+    border: none;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.banner .container-login .btn-container .login-btn:active{
+    background-color: var(--texto-color);
+    color: var(--texto-color-2);
+}
